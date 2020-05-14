@@ -12,7 +12,7 @@ Future findAndDownloadClips(var language, var game) async {
   var topClipsResponse = await http.get(
       'https://api.twitch.tv/kraken/clips/top?language=$language&limit=50&period=day&game=$game',
       headers: {
-        'Client-ID': 'la8b7xymkqmptyyhst16oxh74vop4x',
+        'Client-ID': '',
         'Accept': 'application/vnd.twitchtv.v5+json'
       });
   var clipsToDownloadContainer =
